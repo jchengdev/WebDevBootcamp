@@ -1,0 +1,33 @@
+<% include ./partials/header %>
+
+
+<div class="container">
+    <div class="row">
+        <h1 style="text-align: center;">Execute Mongoose Code</h1>
+        
+        <div style="width: 100%; margin: 25px auto; ">
+            <form class="buggy-form" action="/" method="POST">
+                <div class="form-group">
+                    <textarea cols="150" rows="8" name="dbcode" style="resize:vertical"></textarea>
+                </div>
+                <div style="width: 30%">
+                    <div class="form-group">
+                        <button class="btn btn-lg btn-primary btn-block">Submit!</button>
+                    </div>
+                </div>
+            </form>
+            
+            
+        </div>
+        
+        <div style="width: 100%; margin: 25px auto; ">
+            <div class="form-group">
+                <textarea cols="150" rows="8" style="resize:vertical"><%= result %></textarea>
+            </div>
+            <a class="buggy-link" href="/campgrounds">Go Back</a>  
+        </div>
+    </div>
+</div>
+
+
+<% include ./partials/footer %>
